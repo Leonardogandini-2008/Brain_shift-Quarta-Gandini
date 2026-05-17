@@ -32,3 +32,4 @@
   - uso-ia.md
   - README-progetto.md
   - devlog.md
+  - Rimossa cartella __pycache__ dal repository
