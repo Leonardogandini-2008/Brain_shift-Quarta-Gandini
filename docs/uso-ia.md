@@ -32,3 +32,10 @@ Li abbiamo letti, capiti, e poi riscritti a modo nostro nel progetto.
 
 ## Cosa non abbiamo delegato all'IA
 Il devlog, le scelte progettuali 
+
+## Cosa non abbiamo chiesto all'IA
+
+- La logica del generatore con seed
+- Il devlog e le scelte progettuali
+- La correzione dei bug di importazione (l'abbiamo capito da soli leggendo l'errore)
+- Il merge conflict in main.py (risolto manualmente)

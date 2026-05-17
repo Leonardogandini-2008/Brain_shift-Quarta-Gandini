@@ -27,3 +27,38 @@ Il gioco ha due stati:
 
 Si passa da PLAYING a RESULTS quando i 60 secondi finiscono.
 Si torna a PLAYING premendo R nella schermata risultati.
+
+## Macchina a stati
+
+```mermaid
+stateDiagram-v2
+    [*] --> PLAYING: avvio del gioco
+    PLAYING --> RESULTS: scade il timer (60s)
+    RESULTS --> PLAYING: premo R
+    RESULTS --> [*]: premo ESC
+```
+
+### Stato PLAYING
+Disegna la carta, il timer e il punteggio. Ascolta i tasti freccia sinistra e destra.
+Genera un nuovo trial ad ogni risposta e aggiorna il punteggio.
+
+### Stato RESULTS
+Mostra punteggio finale, risposte corrette, errate e accuratezza.
+Ascolta il tasto R per ricominciare.
+
+## Flusso di un trial
+
+1. `generate_trial(rng)` crea un nuovo Trial con posizione, lettera e numero casuali
+2. `compute_expected_answer` calcola la risposta corretta in base alla posizione
+3. `ui.py` disegna la carta sullo schermo
+4. Il giocatore preme freccia destra (SÌ) o sinistra (NO)
+5. `main.py` confronta la risposta con `expected_answer` e imposta `is_correct`
+6. `apply_answer` aggiorna il punteggio
+7. La carta diventa verde o rossa per 150ms (feedback visivo)
+8. Si genera il trial successivo
+
+## Fading istruzioni
+
+La variabile `correct_count` in `main.py` conta le risposte corrette.
+Quando `correct_count >= 10`, `draw_instructions` riceve `show=False`
+e smette di disegnare il testo delle regole.

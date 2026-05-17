@@ -26,3 +26,11 @@ imparare le regole prima di giocare senza aiuto.
 Abbiamo tenuto tutta la logica del gioco separata da pygame.
 Questo ci ha permesso di testare rules.py e scoring.py con pytest
 senza dover aprire una finestra grafica.
+
+## Cosa non siamo riusciti a fare
+
+- Non abbiamo implementato il moltiplicatore di punteggio (obiettivo avanzato)
+- Non abbiamo aggiunto lo stato PAUSED per mettere in pausa il gioco
+- Non abbiamo implementato il fading graduale delle istruzioni (scompaiono di colpo)
+- Non abbiamo aggiunto l'input con il mouse
+- Non abbiamo avuto tempo di scrivere test aggiuntivi oltre a quelli del professore

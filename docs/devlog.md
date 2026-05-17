@@ -33,3 +33,30 @@
   - README-progetto.md
   - devlog.md
   - Rimossa cartella __pycache__ dal repository
+
+  ## Bilancio finale
+
+Siamo soddisfatti di essere riusciti a fare un gioco funzionante che rispetta
+tutte le specifiche base. La parte più difficile è stata l'integrazione tra
+la logica pura e pygame, specialmente correggere gli errori di importazione
+e i merge conflict quando lavoravamo in parallelo.
+
+Abbiamo imparato molto su come organizzare un progetto in moduli separati,
+su come usare git in coppia senza fare casino, e su come leggere i messaggi
+di errore per capire dove stava il problema.
+
+Abbiamo sottovalutato il tempo che avrebbe richiesto la documentazione:
+pensavamo di finire il codice in pochi giorni e poi avere molto tempo per
+i docs, invece abbiamo dovuto fare tutto di corsa nell'ultima giornata.
+
+La divisione del lavoro è stata abbastanza bilanciata: Simone ha fatto
+la logica pura (rules, models, generator, scoring) e Leonardo ha fatto
+l'interfaccia grafica (config, ui, main). Ci siamo aiutati quando c'erano
+problemi di integrazione.
+
+Se avessimo avuto più tempo avremmo aggiunto il moltiplicatore di punteggio
+e il fading graduale delle istruzioni.
+
+Voto che daremmo al nostro progetto: 7/10. Il gioco funziona e rispetta
+le specifiche, ma la documentazione è un po' frettolosa e mancano gli
+obiettivi avanzati.
