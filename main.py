@@ -4,7 +4,11 @@ import time
 import random
 
 from config import *
-from generator import generate_trial, apply_answer
+
+from generator import generate_trial
+
+from scoring import apply_answer
+
 from ui import (
     draw_card,
     draw_hud,
@@ -19,7 +23,7 @@ def main():
     screen = pygame.display.set_mode(
         (SCREEN_WIDTH, SCREEN_HEIGHT)
     )
-
+ 
     pygame.display.set_caption(TITLE)
 
     clock = pygame.time.Clock()
