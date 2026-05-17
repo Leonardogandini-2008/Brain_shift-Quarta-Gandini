@@ -19,10 +19,16 @@
 - Leonardo: disegnata la carta, aggiunto input tastiera, timer e schermata risultati
 - Merge del lavoro dei due membri del team
 
-## 17 Maggio 2026
-- Corretti bug di importazione in main.py
-- Aggiunto codice mancante in rules.py
-- Risolto merge conflict in main.py
+## 17 Maggio 2026 — Sessione finale
+- Aggiunti i file di test del professore in tests/
+- Tutti i 27 test passano (python -m pytest tests/)
+- Corretti bug di importazione in main.py e rules.py
 - Il gioco funziona correttamente
 - Aggiunto .gitignore
-- Scritto README con istruzioni e struttura del progetto
+- Scritto README.md
+- Creata documentazione completa in docs/:
+  - architettura.md
+  - scelte.md
+  - uso-ia.md
+  - README-progetto.md
+  - devlog.md
