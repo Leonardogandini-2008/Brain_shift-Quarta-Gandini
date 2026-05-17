@@ -33,6 +33,8 @@
   - README-progetto.md
   - devlog.md
   - Rimossa cartella __pycache__ dal repository
+  - Completata documentazione: architettura, scelte, uso-ia, devlog con bilancio finale
+- Aggiunti file di sistema Mac al .gitignore
 
   ## Bilancio finale
 
