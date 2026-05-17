@@ -4,7 +4,8 @@ import time
 import random
 
 from config import *
-from generator import generate_trial, apply_answer
+from generator import generate_trial
+from scoring import apply_answer
 from ui import (
     draw_card,
     draw_hud,
